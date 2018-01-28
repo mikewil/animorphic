@@ -1,0 +1,11 @@
+# IntelliJ project files
+.idea
+*.iml
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Bower dependency directory (https://bower.io/)
+bower_components

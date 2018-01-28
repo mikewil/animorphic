@@ -1,0 +1,16 @@
+.jumbotron {
+    background-color: #0397d6;
+}
+
+.btn-primary {
+    background-color: #0397d6;
+}
+
+.btn-primary:hover {
+    background-color: #03ACF5;
+    border-color: #03ACF5;
+}
+
+.carousel-inner img {
+    margin: auto;
+}
