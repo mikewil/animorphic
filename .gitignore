@@ -1,11 +1,21 @@
-# IntelliJ project files
-.idea
-*.iml
+# See https://help.github.com/ignore-files/ for more about ignoring files.
 
-# Logs
-logs
-*.log
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
 npm-debug.log*
-
-# Bower dependency directory (https://bower.io/)
-bower_components
+yarn-debug.log*
+yarn-error.log*
