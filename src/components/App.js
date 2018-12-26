@@ -1,16 +1,18 @@
 import React, {Component} from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
-import './App.css';
+import './App.scss';
 import Header from "./Header";
 import Main from "./Main";
+import Contact from "./Contact";
+import Investment from "./Investment";
+
 import { Carousel } from 'react-responsive-carousel';
 
 class App extends Component {
     render() {
         return (
-            <div className="App">
+            <div className="app">
                 <Header/>
-                <Carousel showStatus={false} showThumbs={false} infiniteLoop={true} autoPlay={true}>
+                <Carousel className="mb-4" showStatus={false} showThumbs={false} infiniteLoop={true} autoPlay={true}>
                     <div>
                         <img src="/img/1.jpg"/>
                     </div>
@@ -22,6 +24,8 @@ class App extends Component {
                     </div>
                 </Carousel>
                 <Main/>
+                <Investment/>
+                <Contact/>
             </div>
         );
     }

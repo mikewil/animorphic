@@ -5,18 +5,8 @@ class Main extends Component {
     render() {
         return (
             <div className="container">
-                <div className="row mt-4 text-center">
-                    <div className="col-4">
-                        <a href="portraits.html" className="btn btn-primary btn-lg">Portraits</a>
-                    </div>
-                    <div className="col-4">
-                        <a href="http://animorphic.photoreflect.com" target="_blank" className="btn btn-primary btn-lg">Client
-                            Login</a>
-                    </div>
-                    <div className="col-4">
-                        <a href="contacts.html" className="btn btn-primary btn-lg">Contact</a>
-                    </div>
-                </div>
+                <h1 className="text-primary">Welcome to Animorphic Studios</h1>
+                <p>Animorphic Studios began as an animation and video company in 2001, later changing to photography and design. Our name comes from the new spin we put on photography. Browse our portfolio to experience our artistic approach.</p>
             </div>
         );
     }
