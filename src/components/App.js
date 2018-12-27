@@ -14,18 +14,33 @@ class App extends Component {
                 <Header/>
                 <Carousel className="mb-4" showStatus={false} showThumbs={false} infiniteLoop={true} autoPlay={true}>
                     <div>
-                        <img src="/img/1.jpg"/>
+                        <img src="/img/portrait_01.jpg"/>
                     </div>
                     <div>
-                        <img src="/img/2.jpg"/>
+						<img src="/img/portrait_02.jpg"/>
                     </div>
                     <div>
-                        <img src="/img/3.jpg"/>
+						<img src="/img/portrait_03.jpg"/>
                     </div>
+					<div>
+						<img src="/img/portrait_04.jpg"/>
+					</div>
+					<div>
+						<img src="/img/portrait_05.jpg"/>
+					</div>
+					<div>
+						<img src="/img/portrait_06.jpg"/>
+					</div>
+					<div>
+						<img src="/img/portrait_07.jpg"/>
+					</div>
                 </Carousel>
                 <Main/>
                 <Investment/>
                 <Contact/>
+                <div className="container">
+                    <small>Copyright &copy; 2018 Animorphic Studios. All rights reserved.</small>
+                </div>
             </div>
         );
     }

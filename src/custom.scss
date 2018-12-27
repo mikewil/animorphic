@@ -1,23 +1,35 @@
 $theme-colors: (
-        "primary": #00A0DE,
-        "secondary": #005DB9,
-        "light-gray": #EEEEEE,
-        "medium-gray": #666666,
-        "dark-gray": #333333
+  "primary": #00A0DE,
+  "secondary": #005DB9,
+  "light-gray": #EEEEEE,
+  "medium-gray": #666666,
+  "dark-gray": #333333
 );
 
+$font-family-base: 'Muli' !default;
+
+@import url('https://fonts.googleapis.com/css?family=Muli:300,700');
 @import '~bootstrap/scss/bootstrap.scss';
 
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+}
+
+.container {
+  h1 {
+    color: theme-color('primary');
+  }
+
+  h2 {
+    color: theme-color('medium-gray');
+  }
 }
 
 .box {
   padding: 2rem;
 }
 
-.box h2, .box label, .box p, .box small {
+.box label, .box p, .box small {
   color: theme-color('medium-gray');
 }

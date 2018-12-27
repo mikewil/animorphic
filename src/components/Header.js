@@ -10,7 +10,7 @@ class Header extends Component {
 			<div className="collapse navbar-collapse">
 				<ul className="navbar-nav ml-auto">
 					<li className="nav-item active">
-						<a className="nav-link" href="#">Portraits</a>
+						<a className="nav-link" href="#investment">Investment</a>
 					</li>
 					<li className="nav-item">
 						<a className="nav-link" href="http://animorphic.photoreflect.com" target="_blank" >Client Login</a>
