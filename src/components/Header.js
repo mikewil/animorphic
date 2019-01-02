@@ -1,33 +1,61 @@
 import React, { Component } from 'react';
+import {
+	Button,
+	Collapse,
+	Navbar,
+	NavbarToggler,
+	NavbarBrand,
+	Nav,
+	NavItem,
+	NavLink
+} from 'reactstrap';
 
-class Header extends Component {
-  render() {
-    return (
-		<nav className="navbar navbar-expand-lg navbar-light bg-light">
-			<a className="navbar-brand" href="#">
-                <img alt="Animorphic Studios" src="img/animorphic_studios_logo.svg" width="400" />
-			</a>
-			<div className="collapse navbar-collapse">
-				<ul className="navbar-nav ml-auto">
-					<li className="nav-item active">
-						<a className="nav-link" href="#investment">Investment</a>
-					</li>
-					<li className="nav-item">
-						<a className="nav-link" href="http://animorphic.photoreflect.com" target="_blank" >Client Login</a>
-					</li>
-					<li className="nav-item">
-						<a className="btn btn-outline-primary mx-2" href="#contact">Let's Talk!</a>
-					</li>
-					<li className="nav-item">
-						<a href="https://www.facebook.com/AnimorphicStudios/" target="_blank">
-							<img alt="Facebook" src="img/fb_icon.svg" height="38" />
-						</a>
-					</li>
-				</ul>
+export class Header extends Component {
+	constructor(props) {
+		super(props);
+
+		this.toggle = this.toggle.bind(this);
+		this.state = {
+			isOpen: false
+		};
+	}
+	toggle() {
+		this.setState({
+			isOpen: !this.state.isOpen
+		});
+	}
+	render() {
+		return (
+			<div>
+				<Navbar color="light" light bg-light expand="md">
+					<NavbarBrand>
+						<img src="/img/animorphic_studios_logo.svg" />
+					</NavbarBrand>
+					<NavbarToggler onClick={this.toggle} />
+					<Collapse isOpen={this.state.isOpen} navbar>
+						<Nav className="ml-auto" navbar>
+							<NavItem>
+								<NavLink href="#investment">Investment</NavLink>
+							</NavItem>
+							<NavItem>
+								<NavLink href="http://animorphic.photoreflect.com" target="_blank">Clients</NavLink>
+							</NavItem>
+							<NavItem>
+								<NavLink href="#contact" target="_blank">
+									<Button color="primary" outline>Let's Talk</Button>
+								</NavLink>
+							</NavItem>
+							<NavItem>
+								<NavLink href="https://www.facebook.com/AnimorphicStudios/" target="_blank">
+									<img alt="Facebook" src="img/fb_icon.svg" height="38" />
+								</NavLink>
+							</NavItem>
+						</Nav>
+					</Collapse>
+				</Navbar>
 			</div>
-		</nav>
-    );
-  }
+		);
+	}
 }
 
 export default Header;

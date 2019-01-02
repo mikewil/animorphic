@@ -16,20 +16,40 @@ body {
   padding: 0;
 }
 
-.container {
-  h1 {
-    color: theme-color('primary');
+#root {
+
+  .container {
+    h1 {
+      color: theme-color('primary');
+    }
+
+    h2 {
+      color: theme-color('medium-gray');
+    }
   }
 
-  h2 {
+  .box {
+    padding: 2rem;
+  }
+
+  .box label, .box p, .box small {
     color: theme-color('medium-gray');
   }
-}
 
-.box {
-  padding: 2rem;
-}
+  .carousel .slide img {
+    max-width: 1200px;
+    max-height: 800px;
+  }
 
-.box label, .box p, .box small {
-  color: theme-color('medium-gray');
+  .navbar-nav {
+    align-items: center;
+  }
+
+  .navbar-brand {
+    width: 100%;
+    @include media-breakpoint-down(sm) {
+      width: calc(100% - 70px);
+    }
+  }
+
 }

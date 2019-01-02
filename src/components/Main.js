@@ -6,7 +6,7 @@ class Main extends Component {
         return (
             <div className="container">
                 <h1 className="text-primary">Welcome to Animorphic Studios</h1>
-                <p>Animorphic Studios has been an active photography studio since 2005. Explore our gallery to experience our artistic approach.</p>
+                <p>Lisa Williams has been a professional photographer since 2005. Explore her portrait gallery to experience her artistic approach.</p>
             </div>
         );
     }
