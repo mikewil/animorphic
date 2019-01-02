@@ -46,10 +46,7 @@ body {
   }
 
   .navbar-brand {
-    width: 100%;
-    @include media-breakpoint-down(sm) {
-      width: calc(100% - 70px);
-    }
+    width: 300px;
   }
 
 }
